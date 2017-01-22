@@ -6,23 +6,11 @@
 /*************** #6 Footer **********/
 
 @charset "UTF-8";
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
 
 
 
-/* Document colors:
-- Primary: #00DFD4,
-- Primary Hover: #009E97,
-- Secondary: #092033,
-- Secondary Hover: #343E45*/
-
-/* Space */
-.no-space {
-  margin: 0 !important;
-  padding: 0 !important;
-}
 
 /* #1 Main Styles */
 * {
@@ -39,10 +27,8 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 100%;
-  line-height: 1.45;
-  color: #141414;
   margin: 0;
 }
 
@@ -81,17 +67,37 @@ img {
     font-size: 1rem;
   }
 }
+
 .btn:hover {
   background: #009E97;
   color: #fff;
 }
-.btn:focus, .btn:active, .btn:focus:active {
-  background: #00DFD4;
-  border-color: #00DFD4;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+
+
+section h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 0 1rem;
 }
-
-
+@media (max-width: 43.75em) {
+  section h3 {
+    font-size: 1.5rem;
+  }
+}
+section li {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+section p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+.no-space {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
 /* #2 Hero Section*/
 
@@ -176,7 +182,6 @@ header h2 {
   z-index: -1;
   background: url("images/header-image.jpg") no-repeat top center;
   background-size: cover;
-  /*background-attachment: fixed;*/
 }
 
 /* #3 Video Section*/
@@ -204,10 +209,6 @@ header h2 {
   background: #fffef6;
   padding: 0;
 }
-.container--video {
-  margin: 0 auto;
-  width: 100%;
-}
 
 .line-decorator-blue {
   width: 60px;
@@ -217,7 +218,6 @@ header h2 {
 
 
 /* #4 Double Column Section */
-
 
 .text-container {
   padding: 10rem 0;
@@ -229,12 +229,21 @@ header h2 {
 .section-text {
   background: #fffef6;
 }
-section.section--primary--alt {
-  background: #00DFD4;
+.text-col-5 {
+  margin: 0 1.5%;
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
 }
-section.section--primary--alt{
-min-height: 300px;
+
+@media (max-width: 34.375em) {
+  .text-col-5 {
+    width: 85%;
+    margin: 0;
+  }
 }
+
+/* #5 Sign-up Form Section */
 
 .sign-up-cta {
   padding: 20%;
@@ -262,59 +271,18 @@ min-height: 300px;
   padding-bottom: 10px;
 }
 
-section.section--grey {
-  background: #1c262b;
-  color: #fff;
+section.section-sign-up {
+  background: #00DFD4;
 }
-section.section--grey--light {
-  background: #29363e;
-  color: #fff;
-}
-section h3 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 300;
-  margin: 0 0 1rem;
-}
-@media (max-width: 43.75em) {
-  section h3 {
-    font-size: 1.5rem;
-  }
-}
-section li {
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-section p {
-  font-size: 1.3rem;
-  font-weight: 300;
-  line-height: 3rem;
+section.section-sign-up{
+min-height: 300px;
 }
 
-
-.text-col-5 {
-  margin: 0 1.5%;
-  display: inline-block;
-  vertical-align: top;
-  width: 45%;
-}
-
-@media (max-width: 34.375em) {
-  .text-col-5 {
-    width: 85%;
-    margin: 0;
-  }
-}
-
-
-
-/* #5 Sign-up Form Section */
 .line-decorator-white {
   width: 60px;
   color: #fff;
   border-style: solid;
 }
-
 
 .sign-up-cta{
   padding: 11rem 2rem 11rem 2rem;
@@ -357,6 +325,20 @@ section p {
   margin-top: 0;
 }
 
+
+#form-input input {
+  float: right;
+  width: 150px;
+}
+#form-input-field {
+  overflow: hidden;
+}
+#form-input-field input {
+  width: 100%;
+  height: 43px;
+  color: #6a6a6a;
+  padding-left: 10px;
+}
 /* #6 Footer Section */
 
 footer {
