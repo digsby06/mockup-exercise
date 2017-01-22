@@ -1,0 +1,417 @@
+/*************** #1 Main Styles **********/
+/*************** #2 Hero Section **********/
+/*************** #3 Video Section **********/
+/*************** #4 Double Column Section **********/
+/*************** #5 Sign-up Form Section **********/
+/*************** #6 Footer **********/
+
+@charset "UTF-8";
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+
+
+
+/* Document colors:
+- Primary: #00DFD4,
+- Primary Hover: #009E97,
+- Secondary: #092033,
+- Secondary Hover: #343E45*/
+
+/* Space */
+.no-space {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* #1 Main Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.45;
+  color: #141414;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+.btn {
+  display: inline-block;
+  margin: 1rem 0;
+  color: white;
+  font-size: .8rem;
+  background: #00DFD4;
+  font-family: "Open Sans" !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .02em !important;
+  border: none;
+  padding: 1rem 1.5rem 1rem !important;
+  border-radius: 0 !important;
+}
+
+@media (max-width: 43.75em) {
+  .btn {
+    padding: .5rem .7rem .6rem;
+    font-size: 1rem;
+  }
+}
+.btn:hover {
+  background: #009E97;
+  color: #fff;
+}
+.btn:focus, .btn:active, .btn:focus:active {
+  background: #00DFD4;
+  border-color: #00DFD4;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+}
+
+
+
+/* #2 Hero Section*/
+
+.hero-headline {
+  color: #092033;
+  font-family: 'Playfair Display', serif;
+}
+
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.image-cropper img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+header {
+  color: white;
+  padding: 15rem 0 10rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+@media (max-width: 43.75em) {
+  header {
+    padding: 2rem 0;
+  }
+}
+header h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem;
+}
+@media (max-width: 43.75em) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+header h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+@media (max-width: 43.75em) {
+  header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.bg-image {
+  height: 700px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.bg-image:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url("images/header-image.jpg") no-repeat top center;
+  background-size: cover;
+  /*background-attachment: fixed;*/
+}
+
+/* #3 Video Section*/
+
+.text-block {
+  max-width: 600px;
+  padding: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.details {
+  text-align: left;
+}
+
+.details h3 {
+  font-family: 'Playfair Display', serif;
+  color: #092033;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  text-align: left;
+}
+
+.section-video {
+  background: #fffef6;
+  padding: 0;
+}
+.container--video {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.line-decorator-blue {
+  width: 60px;
+  color: #092033;
+  border-style: solid;
+}
+
+
+/* #4 Double Column Section */
+
+
+.text-container {
+  padding: 10rem 0;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+}
+
+.section-text {
+  background: #fffef6;
+}
+section.section--primary--alt {
+  background: #00DFD4;
+}
+section.section--primary--alt{
+min-height: 300px;
+}
+
+.sign-up-cta {
+  padding: 20%;
+}
+
+.sign-up-cta h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: left;
+}
+
+.sign-up-cta a:hover {
+  text-decoration: none;
+}
+
+#form-text {
+  padding-bottom: 20px;
+}
+#form-text h3 {
+  text-align: left;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  padding-bottom: 10px;
+}
+
+section.section--grey {
+  background: #1c262b;
+  color: #fff;
+}
+section.section--grey--light {
+  background: #29363e;
+  color: #fff;
+}
+section h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 0 1rem;
+}
+@media (max-width: 43.75em) {
+  section h3 {
+    font-size: 1.5rem;
+  }
+}
+section li {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+section p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+
+.text-col-5 {
+  margin: 0 1.5%;
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+}
+
+@media (max-width: 34.375em) {
+  .text-col-5 {
+    width: 85%;
+    margin: 0;
+  }
+}
+
+
+
+/* #5 Sign-up Form Section */
+.line-decorator-white {
+  width: 60px;
+  color: #fff;
+  border-style: solid;
+}
+
+
+.sign-up-cta{
+  padding: 11rem 2rem 11rem 2rem;
+}
+
+.sign-up-form{
+  padding: 10.5rem 20% 10rem 20%;
+}
+
+@media(max-width: 34.375em){
+  .sign-up-form{
+    padding: 10.5rem 4% 10rem 4%;
+  }
+}
+
+.signup-image {
+  height: 300px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.signup-image:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url("images/signup-image.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+#sign-up-btn.btn.btn-transparent {
+  margin-top: 0;
+}
+
+/* #6 Footer Section */
+
+footer {
+  background: #092033;
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 50px;
+}
+footer ul li img {
+  width: 60px;
+  margin-right: 10rem;
+  margin-top: -25px;
+}
+footer ul li a {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+footer ul li a:hover {
+  color: #343E45;
+  text-decoration: none;
+}
+
+footer ul li span {
+  display: block;
+  width: 70px;
+}
+
+footer .row p {
+  text-align: left;
+  padding-top: 30px;
+}
+
+#footer-links{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5rem 5rem 0 5rem;
+}
+
+#footer-copy{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5rem 5rem 5rem;
+}
