@@ -347,53 +347,52 @@ footer {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.5);
 }
-footer ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: left;
-}
-footer ul li {
-  display: inline-block;
-  margin-right: 50px;
-}
-footer ul li img {
-  width: 60px;
-  margin-right: 10rem;
-  margin-top: -25px;
-}
-footer ul li a {
-  display: block;
-  font-family: "Playfair Display", serif;
-  font-size: 1.8rem;
-  letter-spacing: 1.5px;
-  color: #fff;
-}
-footer ul li a:hover {
-  color: #343E45;
-  text-decoration: none;
+
+#footer-container{
+  max-width: 875px;
 }
 
-footer ul li span {
-  display: block;
-  width: 70px;
+.well{
+  margin-bottom: 0 !important;
+  background-color: #092033 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
 }
 
-footer .row p {
-  text-align: left;
+
+#footer-links{
+  padding-bottom: 30px;
   padding-top: 30px;
 }
 
-#footer-links{
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5rem 5rem 0 5rem;
+.footcopy {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
 }
 
-#footer-copy{
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 5rem 5rem 5rem;
+.footlinks h5{
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+
+@media(min-width: 991px){
+  .footlinks h5{
+    text-align: left;
+  }
+
+  footer {
+    text-align: left;
+  }
+  .footdetails span {
+    display: block;
+    text-align: left;
+  }
+
+  .footcopy {
+    text-align: left;
+  }
+
 }
