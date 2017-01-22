@@ -246,7 +246,7 @@ header h2 {
 /* #5 Sign-up Form Section */
 
 .sign-up-cta {
-  padding: 20%;
+  padding: 27%;
 }
 
 .sign-up-cta h3 {
@@ -284,9 +284,6 @@ min-height: 300px;
   border-style: solid;
 }
 
-.sign-up-cta{
-  padding: 11rem 2rem 11rem 2rem;
-}
 
 .sign-up-form{
   padding: 10.5rem 20% 10rem 20%;
